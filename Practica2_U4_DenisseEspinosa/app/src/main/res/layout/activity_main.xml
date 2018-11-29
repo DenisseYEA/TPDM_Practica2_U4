@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mx.edu.ittepic.practica2_u4_denisseespinosa.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EL GATO"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:id="@+id/jugador"
+        android:textColor="#62428b"
+        android:textSize="25dp"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp">
+
+        <TableRow>
+            <Button
+                android:id="@+id/x1"
+                android:onClick="btnx1"/>
+            <Button
+                android:id="@+id/x2"
+                android:onClick="btnx2"/>
+            <Button
+                android:id="@+id/x3"
+                android:onClick="btnx3"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/x4"
+                android:onClick="btnx4"/>
+            <Button
+                android:id="@+id/x5"
+                android:onClick="btnx5"/>
+            <Button
+                android:id="@+id/x6"
+                android:onClick="btnx6"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/x7"
+                android:onClick="btnx7"/>
+            <Button
+                android:id="@+id/x8"
+                android:onClick="btnx8"/>
+            <Button
+                android:id="@+id/x9"
+                android:onClick="btnx9"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_play_arrow_black_18dp"
+            android:onClick="iniciar"
+            android:id="@+id/iniciar"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_replay_black_18dp"
+            android:onClick="reiniciar"
+            android:id="@+id/reiniciar"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/ganador"
+        android:textAlignment="center"
+        android:textColor="#46385c"
+        android:textSize="25dp"/>
+
+</LinearLayout>
